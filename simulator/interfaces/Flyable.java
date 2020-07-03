@@ -1,4 +1,4 @@
-package simulator.interfaces.flyable;
+package simulator.interfaces;
 
 public interface Flyable {
     void updateConditions();

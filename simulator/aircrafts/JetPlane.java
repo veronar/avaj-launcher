@@ -1,1 +1,1 @@
-package simulator.aircrafts.jetplane;
+package simulator.aircrafts;

@@ -1,5 +1,7 @@
 package simulator.aircrafts.aircraft;
 
+import simulator.aircrafts.*;
+
 public abstract class Aircraft {
     protected long id;
     protected String name;
@@ -12,7 +14,7 @@ public abstract class Aircraft {
     }
 
     private long nextId() {
-        
+
     }
 
 }

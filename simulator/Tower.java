@@ -1,4 +1,4 @@
-package simulator.tower;
+package simulator;
 
 import simulator.interfaces.*;
 

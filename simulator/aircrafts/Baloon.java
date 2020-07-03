@@ -1,4 +1,4 @@
-package simulator.aircrafts.baloon;
+package simulator.aircrafts;
 
 import simulator.
 
