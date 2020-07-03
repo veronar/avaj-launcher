@@ -2,7 +2,8 @@ package simulator.vehicles;
 
 import simulator.*;
 import simulator.vehicles.Coordinates;
-
+import simulator.vehicles.Aircraft;
+import simulator.interfaces.Flyable;
 
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
@@ -13,6 +14,7 @@ public class JetPlane extends Aircraft implements Flyable {
     }
 
     public void updateConditions() {
+        String weather = this.weatherTower.getWeather(this.coordinates);
         String msg[] = {
                 "\uD83C\uDF1E  Sunshine. Daisy. Bottom. Mellow. Turn this stupid fat rat YELLOW.\n",
                 "\uD83C\uDF27️.\n",
@@ -53,7 +55,7 @@ public class JetPlane extends Aircraft implements Flyable {
                 break;
         }
 
-        Sytem.out.println("JetPlane#" + (this.name) + "(" + (this.id) + ") " + msg[msgIndex]);
+        System.out.println("JetPlane#" + (this.name) + "(" + (this.id) + ") " + msg[msgIndex]);
 
         newHeight = this.coordinates.getHeight();
         if (newHeight <= 0){

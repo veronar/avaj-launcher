@@ -2,6 +2,7 @@ package simulator;
 
 import simulator.Tower;
 import simulator.vehicles.Coordinates;
+import simulator.weather.WeatherProvider;
 
 
 public class WeatherTower extends Tower {

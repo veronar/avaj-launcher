@@ -12,7 +12,7 @@ public class WeatherProvider {
     }
 
     public static WeatherProvider getProvider() {
-        return (this.weatherProvider);
+        return (weatherProvider);
     }
 
     public String getCurrentWeather(Coordinates coordinates) {

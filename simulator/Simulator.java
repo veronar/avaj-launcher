@@ -8,12 +8,7 @@ import simulator.weather.*;
 public class Simulator {
     public static void main(String[] args) {
 
-        try {
-            File file = new File(args[0]);
-
-        } catch {
-
-        }
+        System.out.println("Did it compile fine?");
 
     }
 }

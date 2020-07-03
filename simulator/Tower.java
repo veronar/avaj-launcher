@@ -1,6 +1,7 @@
 package simulator;
 
 import simulator.interfaces.Flyable;
+import java.util.ArrayList;
 
 public abstract class Tower {
     private ArrayList<Flyable> observer = new ArrayList<Flyable>();
