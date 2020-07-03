@@ -1,15 +1,11 @@
-
-./simulator/vehicles/Coordinates.java
+./simulator/WeatherTower.java
 ./simulator/vehicles/Aircraft.java
+./simulator/vehicles/Coordinates.java
 ./simulator/vehicles/AircraftFactory.java
 ./simulator/vehicles/Baloon.java
 ./simulator/vehicles/Helicopter.java
 ./simulator/vehicles/JetPlane.java
-
 ./simulator/interfaces/Flyable.java
-
 ./simulator/weather/WeatherProvider.java
-
 ./simulator/Simulator.java
 ./simulator/Tower.java
-./simulator/WeatherTower.java
