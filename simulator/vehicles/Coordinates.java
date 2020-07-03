@@ -1,4 +1,4 @@
-package simulator.aircrafts;
+package simulator.vehicles;
 
 public class Coordinates {
     private int longitude;
