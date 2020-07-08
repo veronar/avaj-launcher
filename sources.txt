@@ -1,5 +1,5 @@
 ./simulator/interfaces/Flyable.java
-./simulator/Simulator.java
+./simulator/Main.java
 ./simulator/Tower.java
 ./simulator/vehicles/Aircraft.java
 ./simulator/vehicles/AircraftFactory.java

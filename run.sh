@@ -1,2 +1,3 @@
-find . -name "*.java" > sources.txt
+echo "\n" > sources.txt
+find . -name "*.java" >> sources.txt
 javac -sourcepath @sources.txt

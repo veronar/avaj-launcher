@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Simulator {
+public class Main {
 
     private static WeatherTower weatherTower;
 //    private static ArrayList<Flyable> flyables = new ArrayList<>();
@@ -24,7 +24,7 @@ public class Simulator {
         }
 
         // AircraftFactory is an abstract class - we can't instantiate it
-//        final AircraftFactory factory = new AircraftFactory() {};
+        final AircraftFactory factory = new AircraftFactory() {};
         // Create the singleton weathertower
 //        WeatherTower weatherTower = new WeatherTower();
         // Cycles - stores how many times the simulation will run ie. first line of the scenario.txt
@@ -77,7 +77,7 @@ public class Simulator {
                     int lon = Integer.parseInt(aircraft[2]);
                     int lat = Integer.parseInt(aircraft[3]);
                     int height = Integer.parseInt(aircraft[4]);
-                    Flyable flyable = AircraftFactory.newAircraft(aircraft[0], aircraft[1], lon, lat, height);
+                    Flyable flyable = factory.newAircraft(aircraft[0], aircraft[1], lon, lat, height);
                     flyable.registerTower(weatherTower);
 
                 } catch (Exception e) {
@@ -92,5 +92,7 @@ public class Simulator {
         } catch (Exception e) {
             System.err.println("Error: " + e);
         }
+
+
     }
 }

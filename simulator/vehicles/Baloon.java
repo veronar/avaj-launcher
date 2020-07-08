@@ -17,10 +17,10 @@ public class Baloon extends Aircraft implements Flyable {
     public void updateConditions() {
         String weather = this.weatherTower.getWeather(this.coordinates);
         String msg[] = {
-                "\uD83C\uDF1E  Sunshine. Daisy. Bottom. Mellow. Turn this stupid fat rat YELLOW.\n",
-                "\uD83C\uDF27️.\n",
-                "\uD83C\uDF2B️.\n",
-                "\uD83C\uDF2B ⛄.\n"
+                "Its SUNNY\n",
+                "Its RAIN\n",
+                "Its FOG\n",
+                "Its SNOW\n"
         };
         int msgIndex = 0;
         // Get the current coordinates & store for changing according to weather
