@@ -93,6 +93,11 @@ public class Main {
             System.err.println("Error: " + e);
         }
 
+        WeatherProvider.getProvider();
+        while (cycles > 0) {
+            weatherTower.changeWeather();
+            cycles--;
+        }
 
     }
 }
