@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 public class Main {
 
-    private static WeatherTower weatherTower;
+//    private static WeatherTower weatherTower;
 //    private static ArrayList<Flyable> flyables = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Main {
         // AircraftFactory is an abstract class - we can't instantiate it
 //        final AircraftFactory factory = new AircraftFactory() {};
         // Create the singleton weathertower
-//        WeatherTower weatherTower = new WeatherTower();
+        WeatherTower weatherTower = new WeatherTower();
         // Cycles - stores how many times the simulation will run ie. first line of the scenario.txt
         int cycles = 0;
 
@@ -59,7 +59,7 @@ public class Main {
                         buffer.close();
                         throw new Exception ("Number must be positive");
                     }
-                    System.out.println("Simulation will run " + cycles + " times.");
+//                    System.out.println("Simulation will run " + cycles + " times.");
                     check++;
                     continue;
                 }
@@ -74,27 +74,33 @@ public class Main {
                     buffer.close();
                     throw new Exception ("Incorrect aircraft format");
                 }
+
                 try {
-                    System.out.println(aircraft[1]);
+//                    System.out.println(aircraft[1]);
                     int lon = Integer.parseInt(aircraft[2]);
                     int lat = Integer.parseInt(aircraft[3]);
                     int height = Integer.parseInt(aircraft[4]);
                     Flyable flyable = AircraftFactory.newAircraft(aircraft[0], aircraft[1], lon, lat, height);
+//                    System.out.println(weatherTower);
                     flyable.registerTower(weatherTower);
 //                    System.out.println(aircraft[0]);
 
+                } catch (NumberFormatException nfe) {
+                    System.err.println("Error: Coordinates must be numbers");
+                    break;
                 } catch (Exception e) {
-                    System.err.println("Error: A error occured while parsing the aircraft details.");
                     System.err.println("Error: " + e);
                 }
             }
-
+            buffer.close();
 
         } catch (NumberFormatException e) {
             System.err.println("Error: First line of scenario must be an Integer");
         } catch (Exception e) {
             System.err.println("Error: " + e);
         }
+
+        System.out.println("Cycles = " + cycles);
 
         WeatherProvider.getProvider();
         while (cycles > 0) {

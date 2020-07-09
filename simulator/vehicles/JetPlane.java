@@ -16,10 +16,10 @@ public class JetPlane extends Aircraft implements Flyable {
     public void updateConditions() {
         String weather = this.weatherTower.getWeather(this.coordinates);
         String msg[] = {
-                "Its SUNNY\n",
-                "Its RAIN\n",
-                "Its FOG\n",
-                "Its SNOW\n"
+                "Its SUNNY",
+                "Its RAIN",
+                "Its FOG",
+                "Its SNOW"
         };
         int msgIndex = 0;
         // Get the current coordinates & store for changing according to weather
@@ -60,7 +60,7 @@ public class JetPlane extends Aircraft implements Flyable {
         newHeight = this.coordinates.getHeight();
         if (newHeight <= 0){
             this.weatherTower.unregister(this);
-            System.out.println("Tower says: JetPlane#" + (this.name) + "(" + (this.id) + ")" + " unregistered from weather tower.\n");
+            System.out.println("Tower says: JetPlane#" + (this.name) + "(" + (this.id) + ")" + " unregistered from weather tower.");
         }
     }
 
@@ -72,6 +72,6 @@ public class JetPlane extends Aircraft implements Flyable {
 
         // Write to file: new flyable logged
         // "Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.\n";
-        System.out.println("Tower says: JetPlane#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.\n");
+        System.out.println("Tower says: JetPlane#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.");
     }
 }

@@ -18,13 +18,17 @@ public abstract class Tower {
     }
 
     protected void conditionsChanged() {
-        int i = 0;
-        int len = observer.size();
+//        int i = 0;
+//        int len = observer.size();
+//
+//        while (i < len) {
+//            Flyable fly = observer.get(i);
+//            fly.updateConditions();
+//            i++;
+//        }
 
-        while (i < len) {
-            Flyable fly = observer.get(i);
-            fly.updateConditions();
-            i++;
+        for(Flyable flyable : observer) {
+            flyable.updateConditions();
         }
     }
 }
