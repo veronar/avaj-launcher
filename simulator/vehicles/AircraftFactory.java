@@ -1,6 +1,5 @@
 package simulator.vehicles;
 
-import simulator.*;
 import simulator.interfaces.Flyable;
 import simulator.vehicles.Baloon;
 import simulator.vehicles.Helicopter;

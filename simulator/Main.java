@@ -1,28 +1,25 @@
 //package simulator;
 
-import simulator.Tower;
-import simulator.WeatherTower;
 import simulator.interfaces.Flyable;
-//import simulator.vehicles.Baloon;
+import simulator.WeatherTower;
 import simulator.weather.WeatherProvider;
 import simulator.vehicles.AircraftFactory;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.io.PrintWriter;
 
 public class Main {
 
-//    private static WeatherTower weatherTower;
-//    private static ArrayList<Flyable> flyables = new ArrayList<>();
+    public static PrintWriter printWriter = null;
 
     public static void main(String[] args) {
 
         if (args.length == 0) {
-            System.err.println("Error: Atleast one argument is required, eg. scenario.txt");
+            System.err.println("Error: At least one argument is required, eg. scenario.txt");
             return;
         }
+
 
         // AircraftFactory is an abstract class - we can't instantiate it
 //        final AircraftFactory factory = new AircraftFactory() {};
@@ -30,23 +27,29 @@ public class Main {
         WeatherTower weatherTower = new WeatherTower();
         // Cycles - stores how many times the simulation will run ie. first line of the scenario.txt
         int cycles = 0;
+        // Check if Simulation file already exists
+        File simulation = new File("simulation.txt");
+        if (simulation.exists()) {
+            simulation.delete();
+        }
+
+
 
         // Try because we are opening files & parsing ints - these could fail / throw exceptions
         try {
             // Opens file given in argument
             File file = new File(args[0]);
-            // Creates simulation.txt which will be written to
-            File simulation = new File("simulation.txt");
             // BufferedReader reads text from an input stream, ie the file
             BufferedReader buffer = new BufferedReader(new FileReader(file));
 
-            // Readline iterates through the file line by line
-//            String line = buffer.readLine();
+            // Creates simulation.txt which will be written to
+            printWriter = new PrintWriter(new File("./simulation.txt"));
+
             String line = "";
             // Check variables serves as checking for the first line of scenario.txt
             int check = 0;
-//            weatherTower = new WeatherTower();
 
+            // Readline iterates through the file line by line
             while((line = buffer.readLine()) != null) {
                 // Check for empty lines
                 if (line.trim().length() == 0)
@@ -66,8 +69,6 @@ public class Main {
 
                 // Split line in 5 parts
                 String[] aircraft = line.split(" ");
-//                System.out.println(line);
-//                System.out.println(Arrays.toString(aircraft));
 
                 // Validate the 5 parts
                 if (aircraft.length != 5) {
@@ -76,14 +77,12 @@ public class Main {
                 }
 
                 try {
-//                    System.out.println(aircraft[1]);
                     int lon = Integer.parseInt(aircraft[2]);
                     int lat = Integer.parseInt(aircraft[3]);
                     int height = Integer.parseInt(aircraft[4]);
+
                     Flyable flyable = AircraftFactory.newAircraft(aircraft[0], aircraft[1], lon, lat, height);
-//                    System.out.println(weatherTower);
                     flyable.registerTower(weatherTower);
-//                    System.out.println(aircraft[0]);
 
                 } catch (NumberFormatException nfe) {
                     System.err.println("Error: Coordinates must be numbers");
@@ -99,8 +98,6 @@ public class Main {
         } catch (Exception e) {
             System.err.println("Error: " + e);
         }
-
-        System.out.println("Cycles = " + cycles);
 
         WeatherProvider.getProvider();
         while (cycles > 0) {

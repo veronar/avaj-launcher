@@ -1,9 +1,12 @@
 package simulator.vehicles;
 
-import simulator.*;
+import simulator.io.AvajWriter;
+import simulator.WeatherTower;
 import simulator.vehicles.Coordinates;
 import simulator.vehicles.Aircraft;
 import simulator.interfaces.Flyable;
+
+import java.awt.*;
 
 
 public class Baloon extends Aircraft implements Flyable {
@@ -56,12 +59,14 @@ public class Baloon extends Aircraft implements Flyable {
                 break;
         }
 
-        System.out.println("Baloon#" + (this.name) + "(" + (this.id) + ") " + msg[msgIndex]);
+        new AvajWriter("Baloon#" + (this.name) + "(" + (this.id) + ") " + msg[msgIndex]);
+//        System.out.println("Baloon#" + (this.name) + "(" + (this.id) + ") " + msg[msgIndex]);
 
         newHeight = this.coordinates.getHeight();
         if (newHeight <= 0){
             this.weatherTower.unregister(this);
-            System.out.println("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " unregistered from weather tower.");
+            new AvajWriter("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " unregistered from weather tower.");
+//            System.out.println("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " unregistered from weather tower.");
         }
     }
 
@@ -72,7 +77,7 @@ public class Baloon extends Aircraft implements Flyable {
         this.weatherTower.register(this);
 
         // Write to file: new flyable logged
-        // "Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.\n";
-        System.out.println("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.");
+        new AvajWriter("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.");
+//        System.out.println("Tower says: Baloon#" + (this.name) + "(" + (this.id) + ")" + " registered to weather tower.");
     }
 }

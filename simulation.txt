@@ -1,0 +1,151 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1) Its RAIN
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its SNOW
+Helicopter#H1(4) Its RAIN
+Helicopter#H2(5) Its SNOW
+Helicopter#H3(6) Its RAIN
+Baloon#B3(7) Its SUNNY
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its SUNNY
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its SUNNY
+Helicopter#H1(4) Its SNOW
+Helicopter#H2(5) Its SNOW
+Helicopter#H3(6) Its FOG
+Baloon#B3(7) Its SNOW
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its SNOW
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its RAIN
+Helicopter#H1(4) Its FOG
+Helicopter#H2(5) Its SUNNY
+Helicopter#H3(6) Its RAIN
+Baloon#B3(7) Its SUNNY
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its RAIN
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its SNOW
+JetPlane#J1(3) Its FOG
+Helicopter#H1(4) Its FOG
+Helicopter#H2(5) Its RAIN
+Helicopter#H3(6) Its FOG
+Baloon#B3(7) Its RAIN
+JetPlane#J2(8) Its FOG
+Helicopter#H4(9) Its SNOW
+Baloon#B1(1) Its RAIN
+Baloon#B2(2) Its RAIN
+JetPlane#J1(3) Its RAIN
+Helicopter#H1(4) Its SUNNY
+Helicopter#H2(5) Its SNOW
+Helicopter#H3(6) Its SUNNY
+Baloon#B3(7) Its SNOW
+JetPlane#J2(8) Its RAIN
+Helicopter#H4(9) Its SNOW
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its FOG
+JetPlane#J1(3) Its SNOW
+Helicopter#H1(4) Its SNOW
+Tower says: Helicopter#H1(4) unregistered from weather tower.
+Helicopter#H2(5) Its SUNNY
+Helicopter#H3(6) Its FOG
+Baloon#B3(7) Its SNOW
+Tower says: Baloon#B3(7) unregistered from weather tower.
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its RAIN
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its SNOW
+Helicopter#H2(5) Its SUNNY
+Helicopter#H3(6) Its SUNNY
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its SNOW
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its FOG
+Helicopter#H2(5) Its SNOW
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its RAIN
+Helicopter#H4(9) Its SUNNY
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its RAIN
+JetPlane#J1(3) Its SUNNY
+Helicopter#H2(5) Its SNOW
+Tower says: Helicopter#H2(5) unregistered from weather tower.
+Helicopter#H3(6) Its FOG
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its RAIN
+Baloon#B1(1) Its RAIN
+Baloon#B2(2) Its SUNNY
+JetPlane#J1(3) Its SUNNY
+Helicopter#H3(6) Its SUNNY
+JetPlane#J2(8) Its SNOW
+Helicopter#H4(9) Its SNOW
+Tower says: Helicopter#H4(9) unregistered from weather tower.
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its SNOW
+JetPlane#J1(3) Its SNOW
+Helicopter#H3(6) Its SUNNY
+JetPlane#J2(8) Its FOG
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its RAIN
+JetPlane#J1(3) Its FOG
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its FOG
+Baloon#B1(1) Its SUNNY
+Baloon#B2(2) Its SNOW
+JetPlane#J1(3) Its SNOW
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its SNOW
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its FOG
+JetPlane#J1(3) Its SUNNY
+Helicopter#H3(6) Its RAIN
+JetPlane#J2(8) Its SUNNY
+Baloon#B1(1) Its RAIN
+Baloon#B2(2) Its SNOW
+JetPlane#J1(3) Its SUNNY
+Helicopter#H3(6) Its RAIN
+JetPlane#J2(8) Its SNOW
+Baloon#B1(1) Its FOG
+Baloon#B2(2) Its SNOW
+Tower says: Baloon#B2(2) unregistered from weather tower.
+JetPlane#J1(3) Its RAIN
+Helicopter#H3(6) Its RAIN
+JetPlane#J2(8) Its RAIN
+Baloon#B1(1) Its FOG
+JetPlane#J1(3) Its SUNNY
+Helicopter#H3(6) Its FOG
+JetPlane#J2(8) Its SUNNY
+Baloon#B1(1) Its RAIN
+Tower says: Baloon#B1(1) unregistered from weather tower.
+JetPlane#J1(3) Its SNOW
+Helicopter#H3(6) Its RAIN
+JetPlane#J2(8) Its FOG
+JetPlane#J1(3) Its FOG
+Helicopter#H3(6) Its FOG
+JetPlane#J2(8) Its FOG
+JetPlane#J1(3) Its SNOW
+Tower says: JetPlane#J1(3) unregistered from weather tower.
+Helicopter#H3(6) Its SUNNY
+JetPlane#J2(8) Its FOG
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its FOG
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its SUNNY
+Helicopter#H3(6) Its SNOW
+JetPlane#J2(8) Its SUNNY
+Helicopter#H3(6) Its FOG
+JetPlane#J2(8) Its SNOW
+Helicopter#H3(6) Its FOG
+JetPlane#J2(8) Its RAIN
