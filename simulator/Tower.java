@@ -2,9 +2,11 @@ package simulator;
 
 import simulator.interfaces.Flyable;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public abstract class Tower {
-    private ArrayList<Flyable> observer = new ArrayList<Flyable>();
+    private List<Flyable> observer = new CopyOnWriteArrayList<Flyable>();
 
     public void register(Flyable flyable) {
         if (observer.contains(flyable)) {
@@ -21,7 +23,7 @@ public abstract class Tower {
 //        int i = 0;
 //        int len = observer.size();
 //
-//        while (i < len) {
+//        while (i < len - 2) {
 //            Flyable fly = observer.get(i);
 //            fly.updateConditions();
 //            i++;
