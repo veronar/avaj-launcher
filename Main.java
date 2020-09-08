@@ -1,4 +1,3 @@
-//package simulator;
 
 import simulator.interfaces.Flyable;
 import simulator.WeatherTower;

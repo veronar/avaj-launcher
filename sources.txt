@@ -1,5 +1,7 @@
+
+./Main.java
 ./simulator/interfaces/Flyable.java
-./simulator/Main.java
+./simulator/io/AvajWriter.java
 ./simulator/Tower.java
 ./simulator/vehicles/Aircraft.java
 ./simulator/vehicles/AircraftFactory.java
