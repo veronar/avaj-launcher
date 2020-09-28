@@ -17,12 +17,12 @@ public class Coordinates {
         else if (this.height < 0) {
             this.height = 0;
         }
-        if (this.longitude < 0) {
+        // if (this.longitude < 0) {
             this.longitude = 0;
-        }
-        if (this.latitude < 0) {
+        // }
+        // if (this.latitude < 0) {
             this.latitude = 0;
-        }
+        // }
     }
 
     public int getLongitude() {
